@@ -1,2 +1,2 @@
 # NervousGame
-The famous "Nervous Game"
+The Nervous Game

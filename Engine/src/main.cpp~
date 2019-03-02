@@ -1,0 +1,12 @@
+#include "../include/Test.hpp"
+
+int	main()
+{
+	Test test;
+
+	while (42)
+	{
+	}
+	
+	return (0);
+}

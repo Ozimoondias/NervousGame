@@ -2,17 +2,19 @@
 #define	_GAME_HPP_
 
 #include <iostream>
-#include <list>
+#include <SFML/Graphics.hpp>
 
 class	Game
 {
 public:
-	explicit Game();
+	explicit Game(const std::string& win_t = "Example",
+		      const int& win_w = 1920,
+		      const int& win_h = 1080);
 	virtual ~Game();
-
-	void	attach(int);
+	
+	const sf::RenderWindow& get_window() const;
 private:
-	std::list<int>	l_int;
+	sf::RenderWindow window;
 };
 
 #endif	// _GAME_HPP_

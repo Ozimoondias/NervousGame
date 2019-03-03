@@ -1,8 +1,8 @@
-#include "../include/Test.hpp"
+#include "../include/Game.hpp"
 
 int	main()
 {
-	Test test;
+	Game test;
 
 	return (0);
 }

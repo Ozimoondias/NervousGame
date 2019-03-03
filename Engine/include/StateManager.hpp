@@ -41,18 +41,18 @@ public:
 class StateManager
 {
 public:
-	static void add(std::unique_ptr<StateMenu> o) {
+	static void add(std::unique_ptr<State> o) {
 		state.push_back(std::move(o));
 	}
-	static std::list<std::unique_ptr<StateMenu>> get() {
+	static std::list<std::unique_ptr<State>> get() {
 		return std::move(state);
 	}
 
 private:
-	static std::list<std::unique_ptr<StateMenu>> state;
+	static std::list<std::unique_ptr<State>> state;
 };
 
-std::list<std::unique_ptr<StateMenu>> StateManager::state =
-			     std::list<std::unique_ptr<StateMenu>>();
+std::list<std::unique_ptr<State>> StateManager::state =
+			     std::list<std::unique_ptr<State>>();
 
 #endif // _STATE_MANAGER_HPP_

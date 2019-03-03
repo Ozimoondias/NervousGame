@@ -7,6 +7,7 @@ Game::Game(const std::string& win_t,
 	std::cout << "C Game" << std::endl;
 
 	this->window.create(sf::VideoMode(win_w, win_h), win_t);
+	this->window.setFramerateLimit(60);
 }
 
 Game::~Game()
@@ -17,4 +18,15 @@ Game::~Game()
 const sf::RenderWindow& Game::get_window() const
 {
 	return window;
+}
+
+void Game::run()
+{
+	std::cout << "ML Game" << std::endl;
+
+	while (this->window.isOpen())
+	{
+		this->window.clear();
+		this->window.display();
+	}
 }

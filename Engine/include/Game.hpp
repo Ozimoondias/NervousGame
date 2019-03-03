@@ -13,6 +13,8 @@ public:
 	virtual ~Game();
 	
 	const sf::RenderWindow& get_window() const;
+	void run();
+
 private:
 	sf::RenderWindow window;
 };

@@ -9,8 +9,12 @@ public:
         explicit StateMenu();
 	virtual ~StateMenu();
 
+	void init();
+	void clean();
+
+	void event();
 	void update();
-	void render();
+	void draw();
 };
 
 #endif // _STATE_MENU_HPP_

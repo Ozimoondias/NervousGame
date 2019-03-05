@@ -1,17 +1,9 @@
 #include "../include/Game.hpp"
-#include "../include/State/StateManager.hpp"
 
 int	main()
 {
+	Game test(500, 500);
 
-	StateManager::add(std::make_unique<StateMenu>());
-	StateManager::add(std::make_unique<StatePause>());
-	
-	for (const std::unique_ptr<IState>& val : StateManager::get())
-	{
-		val->update();
-		val->render();
-	}
-
-	return (0);
+	test.run();
+	return 0;
 }

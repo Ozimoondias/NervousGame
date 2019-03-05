@@ -12,13 +12,19 @@
 class StateManager
 {
 public:
+
 	explicit StateManager();
 	virtual ~StateManager();
 
-	static void add(std::unique_ptr<IState>);
-	static std::list<std::unique_ptr<IState>> get();
+	void add_state(std::shared_ptr<IState>);
+	void pop_state();
+
+	std::shared_ptr<IState> get_current();
+
 private:
-	static std::list<std::unique_ptr<IState>> state;
+
+	std::list<std::shared_ptr<IState>> states;
+
 };
 
 #endif // _STATEMANAGER_HPP_

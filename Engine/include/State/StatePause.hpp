@@ -9,8 +9,12 @@ public:
         explicit StatePause();
         virtual ~StatePause();
 
+	void init();
+	void clean();
+
+	void event();
         void update();
-        void render();
+        void draw();
 };
 
 #endif // _STATE_PAUSE_HPP_

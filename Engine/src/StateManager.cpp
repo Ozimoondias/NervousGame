@@ -1,8 +1,5 @@
 #include "../include/State/StateManager.hpp"
 
-std::list<std::unique_ptr<IState>> StateManager::state =
-        std::list<std::unique_ptr<IState>>();
-
 StateManager::StateManager()
 {
 	std::cout << "C StateManager" << std::endl;
@@ -13,12 +10,17 @@ StateManager::~StateManager()
 	std::cout << "D StateManager" << std::endl;
 }
 
-void StateManager::add(std::unique_ptr<IState> new_state)
+void StateManager::add_state(std::shared_ptr<IState> new_state)
 {
-	state.push_back(std::move(new_state));
+	states.push_back(new_state);
 }
 
-std::list<std::unique_ptr<IState>> StateManager::get()
+void StateManager::pop_state()
 {
-	return std::move(state);
+	
+}
+
+std::shared_ptr<IState> StateManager::get_current()
+{
+	return states.back();
 }

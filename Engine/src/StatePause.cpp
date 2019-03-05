@@ -2,20 +2,35 @@
 
 StatePause::StatePause()
 {
-	std::cout << "C StatePause" << std::endl;
+	std::cout << "Constructor StatePause" << std::endl;
 }
 
 StatePause::~StatePause()
 {
-	std::cout << "D StatePause" << std::endl;
+	std::cout << "Destructor StatePause" << std::endl;
+}
+
+void StatePause::init()
+{
+	std::cout << "Init StatePause" << std::endl;
+}
+
+void StatePause::clean()
+{
+	std::cout << "Clean StatePause" << std::endl;
+}
+
+void StatePause::event()
+{
+	std::cout << "Event StatePause" << std::endl;
 }
 
 void StatePause::update()
 {
-	std::cout << "U StatePause" << std::endl;
+	std::cout << "Update StatePause" << std::endl;
 }
 
-void StatePause::render()
+void StatePause::draw()
 {
-	std::cout << "R StatePause" << std::endl;
+	std::cout << "Draw StatePause" << std::endl;
 }

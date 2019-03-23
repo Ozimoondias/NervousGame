@@ -1,6 +1,7 @@
 #include "../include/State/StatePause.hpp"
 
-StatePause::StatePause()
+StatePause::StatePause(StateManager &sm)
+	: IState(sm)
 {
 	std::cout << "Constructor StatePause" << std::endl;
 }
@@ -20,9 +21,18 @@ void StatePause::clean()
 	std::cout << "Clean StatePause" << std::endl;
 }
 
-void StatePause::event()
+void StatePause::event(sf::Event &event)
 {
-	std::cout << "Event StatePause" << std::endl;
+	//std::cout << "Event StatePause" << std::endl;
+
+	if (event.type == sf::Event::KeyPressed)
+        {
+                if (event.key.code == sf::Keyboard::Escape)
+                {
+                        std::cout << "PAUSE the escape key was pressed" << std::endl;
+                        change_c_state(EState::State::Play);
+                }
+	}
 }
 
 void StatePause::update()

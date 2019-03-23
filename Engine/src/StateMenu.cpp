@@ -1,6 +1,7 @@
 #include "../include/State/StateMenu.hpp"
 
-StateMenu::StateMenu()
+StateMenu::StateMenu(StateManager &sm)
+	: IState(sm)
 {
 	std::cout << "Constructor StateMenu" << std::endl;
 }
@@ -20,9 +21,18 @@ void StateMenu::clean()
 	std::cout << "Clean StateMenu" << std::endl;
 }
 
-void StateMenu::event()
+void StateMenu::event(sf::Event &event)
 {
-	std::cout << "Event StateMenu" << std::endl;
+	//std::cout << "Event StateMenu" << std::endl;
+
+	if (event.type == sf::Event::KeyPressed)
+	{
+		if (event.key.code == sf::Keyboard::Enter)
+		{
+			std::cout << "MENU the enter key was pressed" << std::endl;
+			change_c_state(EState::State::Play);
+		}
+	}
 }
 
 void StateMenu::update()

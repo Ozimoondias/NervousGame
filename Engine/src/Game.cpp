@@ -8,8 +8,6 @@ Game::Game(const int& win_w,
 	
 	window.create(sf::VideoMode(win_w, win_h), win_t);
 	window.setFramerateLimit(60);
-
-	state_manager.add_state(std::make_shared<StateMenu>());
 }
 
 Game::~Game()
@@ -28,10 +26,15 @@ void Game::run()
 			if (event.type == sf::Event::Closed)
 				window.close();
 			else
-				state_manager.get_current()->draw();
+				state_manager.get_c_state()->event(event);
 		}
-		window.clear();
-		window.display();
+
+		if (event.type != sf::Event::LostFocus)
+		{
+			window.clear();
+			//state_manager.get_c_state()->draw();
+			window.display();
+		}
 	}
 }
 

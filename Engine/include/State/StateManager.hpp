@@ -1,13 +1,12 @@
 #ifndef _STATEMANAGER_HPP_
 #define _STATEMANAGER_HPP_
 
-#include <list>
+#include <map>
 #include <memory>
 #include <iostream>
 
+#include "State.hpp"
 #include "IState.hpp"
-#include "StateMenu.hpp"
-#include "StatePause.hpp"
 
 class StateManager
 {
@@ -16,14 +15,15 @@ public:
 	explicit StateManager();
 	virtual ~StateManager();
 
-	void add_state(std::shared_ptr<IState>);
-	void pop_state();
+	void change_c_state(EState::State);
 
-	std::shared_ptr<IState> get_current();
+	std::shared_ptr<IState> get_c_state();
+	std::map<EState::State, std::shared_ptr<IState>> get_m_state();
 
 private:
 
-	std::list<std::shared_ptr<IState>> states;
+	std::shared_ptr<IState> c_state;
+	std::map<EState::State, std::shared_ptr<IState>> m_state;
 
 };
 

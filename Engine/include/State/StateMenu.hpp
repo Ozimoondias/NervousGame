@@ -6,13 +6,14 @@
 class StateMenu : public IState
 {
 public:
-        explicit StateMenu();
+
+        explicit StateMenu(StateManager&);
 	virtual ~StateMenu();
 
 	void init();
 	void clean();
 
-	void event();
+	void event(sf::Event&);
 	void update();
 	void draw();
 };

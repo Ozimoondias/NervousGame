@@ -4,22 +4,28 @@
 #include <iostream>
 #include <memory>
 
+#include <SFML/Graphics.hpp>
+
+#include "EState.hpp"
+
 class StateManager;
 
 class IState
 {
 public:
-	IState();
+
+	IState(StateManager&);
 	virtual ~IState();
 
-	virtual void init() = 0;
-	virtual void clean() = 0;
-
-	virtual void event() = 0;
+	virtual void event(sf::Event&) = 0;
 	virtual void update() = 0;
 	virtual void draw() = 0;
 
-	void change(std::unique_ptr<StateManager>, std::unique_ptr<IState>);
+protected:
+	void change_c_state(EState::State);
+
+private:
+	StateManager *state_manager;
 };
 
 #endif	// _ISTATE_HPP_

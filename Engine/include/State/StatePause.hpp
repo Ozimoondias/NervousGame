@@ -6,13 +6,13 @@
 class StatePause : public IState
 {
 public:
-        explicit StatePause();
+        explicit StatePause(StateManager&);
         virtual ~StatePause();
 
 	void init();
 	void clean();
 
-	void event();
+	void event(sf::Event&);
         void update();
         void draw();
 };

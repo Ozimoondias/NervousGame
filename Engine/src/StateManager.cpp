@@ -25,18 +25,6 @@ StateManager::~StateManager()
 void StateManager::change_c_state(EState::State e_state)
 {
 	c_state = m_state[e_state];
-	/*switch (e_state)
-	{
-	case Menu:
-		c_state = m_state[EState::State::Menu];
-		break;
-	case Play:
-		c_state = m_state[EState::State::Play];
-		break;
-	case Pause:
-		c_state = m_state[EState::State::Pause];
-		break;
-		}*/
 }
 
 std::shared_ptr<IState> StateManager::get_c_state()

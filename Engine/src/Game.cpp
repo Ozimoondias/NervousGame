@@ -1,4 +1,4 @@
-#include "../include/Game.hpp"
+#include "Game.hpp"
 
 Game::Game(const int& win_w,
 	   const int& win_h,

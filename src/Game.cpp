@@ -31,8 +31,10 @@ void Game::run()
 
 		if (event.type != sf::Event::LostFocus)
 		{
+			state_manager.get_c_state()->update();
+			
 			window.clear();
-			//state_manager.get_c_state()->draw();
+			state_manager.get_c_state()->draw(window);
 			window.display();
 		}
 	}

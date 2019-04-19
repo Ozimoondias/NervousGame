@@ -3,6 +3,10 @@
 StatePlay::StatePlay(StateManager &sm)
 	: IState(sm)
 {
+	if (!bgt.loadFromFile("../res/play.png"))
+		;//return -1;
+	bgs.setTexture(bgt);
+
 	std::cout << "Constructor StatePlay" << std::endl;
 }
 
@@ -23,29 +27,24 @@ void StatePlay::clean()
 
 void StatePlay::event(sf::Event &event)
 {
-	//std::cout << "Event StatePlay" << std::endl;
-
 	if (event.type == sf::Event::KeyPressed)
         {
-                if (event.key.code == sf::Keyboard::Enter)
-                {
-                        std::cout << "PLAY the enter key was pressed" << std::endl;
-                        change_c_state(EState::State::Pause);
-                }
                 if (event.key.code == sf::Keyboard::Escape)
                 {
                         std::cout << "PLAY the escape key was pressed" << std::endl;
-                        change_c_state(EState::State::Menu);
+                        change_c_state(EState::State::Pause);
                 }
         }
 }
 
 void StatePlay::update()
 {
-	std::cout << "Update StatePlay" << std::endl;
+	//std::cout << "Update StatePlay" << std::endl;
 }
 
-void StatePlay::draw()
+void StatePlay::draw(sf::RenderWindow &win)
 {
-	std::cout << "Draw StatePlay" << std::endl;
+	//std::cout << "Draw StatePlay" << std::endl;
+
+	win.draw(bgs);
 }

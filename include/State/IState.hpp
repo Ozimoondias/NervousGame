@@ -19,7 +19,7 @@ public:
 
 	virtual void event(sf::Event&) = 0;
 	virtual void update() = 0;
-	virtual void draw() = 0;
+	virtual void draw(sf::RenderWindow&) = 0;
 
 protected:
 	void change_c_state(EState::State);

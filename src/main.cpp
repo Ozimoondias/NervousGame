@@ -2,7 +2,7 @@
 
 int	main()
 {
-	Game test(500, 500);
+	Game test(1920, 1080);
 
 	test.run();
 	return 0;

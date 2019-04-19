@@ -6,13 +6,13 @@ Button::Button(int x, int y, std::string t, std::function<void(void)> f)
 		;//return -1;
 	sprite.setTexture(texture);
 	sprite.setPosition(sf::Vector2f(x, y));
-	
+
 	if (!font.loadFromFile("../res/arcade.ttf"))
 		;// erreur...
 	text.setFont(font);
 	text.setString(t);
 	text.setPosition(sf::Vector2f(x, y));
-	
+
 	function = f;
 }
 

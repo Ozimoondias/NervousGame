@@ -1,0 +1,3 @@
+/home/agar/NervousGame/build/CMakeFiles/rebuild_cache.dir
+/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir
+/home/agar/NervousGame/build/CMakeFiles/edit_cache.dir

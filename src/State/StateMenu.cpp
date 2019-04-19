@@ -69,5 +69,8 @@ void StateMenu::draw(sf::RenderWindow &win)
 
 	win.draw(bgs);
 	for (auto const& it : buttons)
+	{ne 
 		it->draw(win);
+		it->get_function()();
+	}
 }

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/agar/NervousGame/src/Button/Button.cpp" "/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o"
+  "/home/agar/NervousGame/src/Button/ButtonManager.cpp" "/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o"
   "/home/agar/NervousGame/src/Game.cpp" "/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir/src/Game.cpp.o"
   "/home/agar/NervousGame/src/State/IState.cpp" "/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir/src/State/IState.cpp.o"
   "/home/agar/NervousGame/src/State/StateManager.cpp" "/home/agar/NervousGame/build/CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o"

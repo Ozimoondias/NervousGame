@@ -4,7 +4,12 @@
 CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o: ../include/Button/Button.hpp
 CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o: ../src/Button/Button.cpp
 
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o: ../include/Button/ButtonManager.hpp
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o: ../src/Button/ButtonManager.cpp
+
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/Button/ButtonManager.hpp
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/Game.hpp
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/State/EState.hpp
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/State/IState.hpp
@@ -16,6 +21,7 @@ CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../include/State/StatePlay.hpp
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../src/Game.cpp
 
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/Button/ButtonManager.hpp
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/State/EState.hpp
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/State/IState.hpp
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/State/LState.hpp
@@ -26,6 +32,7 @@ CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../include/State/StatePlay.h
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../src/State/IState.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/Button/ButtonManager.hpp
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/State/EState.hpp
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/State/IState.hpp
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/State/LState.hpp
@@ -36,6 +43,7 @@ CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../include/State/State
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../src/State/StateManager.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../include/Button/ButtonManager.hpp
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../include/State/EState.hpp
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../include/State/IState.hpp
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../include/State/StateMenu.hpp
@@ -52,6 +60,7 @@ CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o: ../include/State/StatePla
 CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o: ../src/State/StatePlay.cpp
 
 CMakeFiles/nervous_game.dir/src/main.cpp.o: ../include/Button/Button.hpp
+CMakeFiles/nervous_game.dir/src/main.cpp.o: ../include/Button/ButtonManager.hpp
 CMakeFiles/nervous_game.dir/src/main.cpp.o: ../include/Game.hpp
 CMakeFiles/nervous_game.dir/src/main.cpp.o: ../include/State/EState.hpp
 CMakeFiles/nervous_game.dir/src/main.cpp.o: ../include/State/IState.hpp

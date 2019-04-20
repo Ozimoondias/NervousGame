@@ -7,26 +7,18 @@ StateMenu::StateMenu(StateManager &sm)
 		;//return -1;
 	bgs.setTexture(bgt);
 	
-	buttons.push_back(
-		std::make_shared<Button>(
-			100, 100, "suce 1",
-			[](){std::cout << "Button 1 clicked!" << std::endl;})
-		);
-	buttons.push_back(
-		std::make_shared<Button>(
-			100, 300, "Suce 2",
-			[](){std::cout << "Button 1 clicked!" << std::endl;})
-		);
-	buttons.push_back(
-		std::make_shared<Button>(
-			100, 500, "Suce 3",
-			[](){std::cout << "Button 1 clicked!" << std::endl;})
-		);
-	buttons.push_back(
-		std::make_shared<Button>(
-			100, 700, "Suce 4",
-			[](){std::cout << "Button 1 clicked!" << std::endl;})
-		);
+	button_manager.add_button(
+		100, 100, "suce 1",
+		[](){std::cout << "Button 1 clicked!" << std::endl;});
+	button_manager.add_button(
+		100, 300, "suce 2",
+		[](){std::cout << "Button 1 clicked!" << std::endl;});
+	button_manager.add_button(
+		100, 500, "suce 3",
+		[](){std::cout << "Button 1 clicked!" << std::endl;});
+	button_manager.add_button(
+		100, 700, "suce 4",
+		[](){std::cout << "Button 1 clicked!" << std::endl;});
 	
 	std::cout << "Constructor StateMenu" << std::endl;
 }
@@ -48,14 +40,7 @@ void StateMenu::clean()
 
 void StateMenu::event(sf::Event &event)
 {
-	if (event.type == sf::Event::KeyPressed)
-	{
-		if (event.key.code == sf::Keyboard::Enter)
-		{
-			std::cout << "MENU the enter key was pressed" << std::endl;
-			change_c_state(EState::State::Play);
-		}
-	}
+	button_manager.event(event);
 }
 
 void StateMenu::update()
@@ -68,9 +53,5 @@ void StateMenu::draw(sf::RenderWindow &win)
 	//std::cout << "Draw StateMenu" << std::endl;
 
 	win.draw(bgs);
-	for (auto const& it : buttons)
-	{ne 
-		it->draw(win);
-		it->get_function()();
-	}
+	button_manager.draw(win);
 }

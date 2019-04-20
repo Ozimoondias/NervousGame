@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o"
+  "CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o"
   "CMakeFiles/nervous_game.dir/src/Game.cpp.o"
   "CMakeFiles/nervous_game.dir/src/State/IState.cpp.o"
   "CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o"

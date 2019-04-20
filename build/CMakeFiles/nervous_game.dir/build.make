@@ -70,9 +70,22 @@ CMakeFiles/nervous_game.dir/src/Button/Button.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nervous_game.dir/src/Button/Button.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/NervousGame/src/Button/Button.cpp -o CMakeFiles/nervous_game.dir/src/Button/Button.cpp.s
 
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o: CMakeFiles/nervous_game.dir/flags.make
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o: ../src/Button/ButtonManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o -c /home/agar/NervousGame/src/Button/ButtonManager.cpp
+
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/NervousGame/src/Button/ButtonManager.cpp > CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.i
+
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/NervousGame/src/Button/ButtonManager.cpp -o CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.s
+
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nervous_game.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nervous_game.dir/src/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/Game.cpp.o -c /home/agar/NervousGame/src/Game.cpp
 
 CMakeFiles/nervous_game.dir/src/Game.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/nervous_game.dir/src/Game.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o: ../src/State/IState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nervous_game.dir/src/State/IState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nervous_game.dir/src/State/IState.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/State/IState.cpp.o -c /home/agar/NervousGame/src/State/IState.cpp
 
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/nervous_game.dir/src/State/IState.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o: ../src/State/StateManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o -c /home/agar/NervousGame/src/State/StateManager.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o: ../src/State/StateMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o -c /home/agar/NervousGame/src/State/StateMenu.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.o: ../src/State/StatePause.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.o -c /home/agar/NervousGame/src/State/StatePause.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/nervous_game.dir/src/State/StatePause.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o: ../src/State/StatePlay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o -c /home/agar/NervousGame/src/State/StatePlay.cpp
 
 CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.s: cmake_force
 
 CMakeFiles/nervous_game.dir/src/main.cpp.o: CMakeFiles/nervous_game.dir/flags.make
 CMakeFiles/nervous_game.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nervous_game.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/nervous_game.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nervous_game.dir/src/main.cpp.o -c /home/agar/NervousGame/src/main.cpp
 
 CMakeFiles/nervous_game.dir/src/main.cpp.i: cmake_force
@@ -164,6 +177,7 @@ CMakeFiles/nervous_game.dir/src/main.cpp.s: cmake_force
 # Object files for target nervous_game
 nervous_game_OBJECTS = \
 "CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o" \
+"CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o" \
 "CMakeFiles/nervous_game.dir/src/Game.cpp.o" \
 "CMakeFiles/nervous_game.dir/src/State/IState.cpp.o" \
 "CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o" \
@@ -176,6 +190,7 @@ nervous_game_OBJECTS = \
 nervous_game_EXTERNAL_OBJECTS =
 
 nervous_game: CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o
+nervous_game: CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o
 nervous_game: CMakeFiles/nervous_game.dir/src/Game.cpp.o
 nervous_game: CMakeFiles/nervous_game.dir/src/State/IState.cpp.o
 nervous_game: CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o
@@ -190,7 +205,7 @@ nervous_game: /usr/lib/libsfml-audio.so
 nervous_game: /usr/lib/libsfml-window.so
 nervous_game: /usr/lib/libsfml-system.so
 nervous_game: CMakeFiles/nervous_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable nervous_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/NervousGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable nervous_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nervous_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

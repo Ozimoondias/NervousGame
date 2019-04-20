@@ -2,7 +2,7 @@
 #define _STATE_MENU_HPP_
 
 #include "IState.hpp"
-#include "Button/Button.hpp"
+#include "Button/ButtonManager.hpp"
 
 #include <list>
 
@@ -24,9 +24,8 @@ private:
 
 	sf::Sprite	bgs;
 	sf::Texture	bgt;
+	ButtonManager	button_manager;
 
-	std::list<std::shared_ptr<Button>>	buttons;
-	
 };
 
 #endif // _STATE_MENU_HPP_

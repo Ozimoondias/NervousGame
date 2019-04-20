@@ -1,6 +1,7 @@
 #include "Button/Button.hpp"
 
-Button::Button(int x, int y, std::string t, std::function<void(void)> f)
+Button::Button(int x, int y, std::string t,
+	       std::function<void(void)> f)
 {
 	if (!texture.loadFromFile("../res/button.png"))
 		;//return -1;
@@ -24,6 +25,21 @@ void Button::draw(sf::RenderWindow &win)
 {
 	win.draw(sprite);
 	win.draw(text);
+}
+
+void Button::draw(sf::RenderWindow &win, sf::Shader &shader)
+{
+	sf::Texture tex;
+	tex.loadFromFile("../res/button.png");
+	sf::Sprite spr(tex);
+
+
+	sf::RenderStates states;
+        states.shader = &shader;
+
+	//win.draw(sprite, &shader);
+	win.draw(spr, states);
+	//win.draw(text, &shader);
 }
 
 std::function<void(void)> Button::get_function()

@@ -2,7 +2,6 @@
 #define _BUTTON_HPP_
 
 #include <functional>
-
 #include <SFML/Graphics.hpp>
 
 class	Button
@@ -13,6 +12,8 @@ public:
 	virtual ~Button();
 
 	void draw(sf::RenderWindow&);
+	void draw(sf::RenderWindow&, sf::Shader&);
+
 	std::function<void(void)> get_function();
 
 private:

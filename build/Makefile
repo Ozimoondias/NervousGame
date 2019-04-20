@@ -150,6 +150,33 @@ src/Button/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/Button/Button.cpp.s
 .PHONY : src/Button/Button.cpp.s
 
+src/Button/ButtonManager.o: src/Button/ButtonManager.cpp.o
+
+.PHONY : src/Button/ButtonManager.o
+
+# target to build an object file
+src/Button/ButtonManager.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o
+.PHONY : src/Button/ButtonManager.cpp.o
+
+src/Button/ButtonManager.i: src/Button/ButtonManager.cpp.i
+
+.PHONY : src/Button/ButtonManager.i
+
+# target to preprocess a source file
+src/Button/ButtonManager.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.i
+.PHONY : src/Button/ButtonManager.cpp.i
+
+src/Button/ButtonManager.s: src/Button/ButtonManager.cpp.s
+
+.PHONY : src/Button/ButtonManager.s
+
+# target to generate assembly for a file
+src/Button/ButtonManager.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.s
+.PHONY : src/Button/ButtonManager.cpp.s
+
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -351,6 +378,9 @@ help:
 	@echo "... src/Button/Button.o"
 	@echo "... src/Button/Button.i"
 	@echo "... src/Button/Button.s"
+	@echo "... src/Button/ButtonManager.o"
+	@echo "... src/Button/ButtonManager.i"
+	@echo "... src/Button/ButtonManager.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

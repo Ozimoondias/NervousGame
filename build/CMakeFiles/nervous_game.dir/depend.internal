@@ -4,8 +4,13 @@
 CMakeFiles/nervous_game.dir/src/Button/Button.cpp.o
  ../include/Button/Button.hpp
  /home/agar/NervousGame/src/Button/Button.cpp
+CMakeFiles/nervous_game.dir/src/Button/ButtonManager.cpp.o
+ ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
+ /home/agar/NervousGame/src/Button/ButtonManager.cpp
 CMakeFiles/nervous_game.dir/src/Game.cpp.o
  ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
  ../include/Game.hpp
  ../include/State/EState.hpp
  ../include/State/IState.hpp
@@ -17,6 +22,7 @@ CMakeFiles/nervous_game.dir/src/Game.cpp.o
  /home/agar/NervousGame/src/Game.cpp
 CMakeFiles/nervous_game.dir/src/State/IState.cpp.o
  ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
  ../include/State/EState.hpp
  ../include/State/IState.hpp
  ../include/State/LState.hpp
@@ -27,6 +33,7 @@ CMakeFiles/nervous_game.dir/src/State/IState.cpp.o
  /home/agar/NervousGame/src/State/IState.cpp
 CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o
  ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
  ../include/State/EState.hpp
  ../include/State/IState.hpp
  ../include/State/LState.hpp
@@ -37,6 +44,7 @@ CMakeFiles/nervous_game.dir/src/State/StateManager.cpp.o
  /home/agar/NervousGame/src/State/StateManager.cpp
 CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.o
  ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
  ../include/State/EState.hpp
  ../include/State/IState.hpp
  ../include/State/StateMenu.hpp
@@ -53,6 +61,7 @@ CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.o
  /home/agar/NervousGame/src/State/StatePlay.cpp
 CMakeFiles/nervous_game.dir/src/main.cpp.o
  ../include/Button/Button.hpp
+ ../include/Button/ButtonManager.hpp
  ../include/Game.hpp
  ../include/State/EState.hpp
  ../include/State/IState.hpp

@@ -12,27 +12,17 @@ functional
 SFML/Graphics.hpp
 -
 
-../include/State/EState.hpp
-
-../include/State/IState.hpp
-iostream
+../include/Button/ButtonManager.hpp
+vector
 -
 memory
 -
-SFML/Graphics.hpp
--
-EState.hpp
-../include/State/EState.hpp
+Button.hpp
+../include/Button/Button.hpp
 
-../include/State/StateMenu.hpp
-IState.hpp
-../include/State/IState.hpp
-Button/Button.hpp
-../include/State/Button/Button.hpp
-list
+/home/agar/NervousGame/src/Button/ButtonManager.cpp
+Button/ButtonManager.hpp
+/home/agar/NervousGame/src/Button/Button/ButtonManager.hpp
+iostream
 -
-
-/home/agar/NervousGame/src/State/StateMenu.cpp
-../include/State/StateMenu.hpp
-/home/agar/NervousGame/src/include/State/StateMenu.hpp
 

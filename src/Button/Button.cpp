@@ -29,7 +29,7 @@ void Button::draw(sf::RenderWindow &win)
 
 void Button::draw(sf::RenderWindow &win, sf::Shader &shader)
 {
-	sf::Texture tex;
+	/*sf::Texture tex;
 	tex.loadFromFile("../res/button.png");
 	sf::Sprite spr(tex);
 
@@ -39,7 +39,7 @@ void Button::draw(sf::RenderWindow &win, sf::Shader &shader)
 
 	//win.draw(sprite, &shader);
 	win.draw(spr, states);
-	//win.draw(text, &shader);
+	//win.draw(text, &shader);*/
 }
 
 std::function<void(void)> Button::get_function()

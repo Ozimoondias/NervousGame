@@ -8,17 +8,17 @@ StateMenu::StateMenu(StateManager &sm)
 	bgs.setTexture(bgt);
 	
 	button_manager.add_button(
-		100, 100, "suce 1",
-		[](){std::cout << "Button 1 clicked!" << std::endl;});
+		100, 100, "play",
+		[&](){ change_c_state(EState::State::Play); });
 	button_manager.add_button(
 		100, 300, "suce 2",
-		[](){std::cout << "Button 1 clicked!" << std::endl;});
+		[](){std::cout << "Button 2 clicked!" << std::endl;});
 	button_manager.add_button(
 		100, 500, "suce 3",
-		[](){std::cout << "Button 1 clicked!" << std::endl;});
+		[](){std::cout << "Button 3 clicked!" << std::endl;});
 	button_manager.add_button(
 		100, 700, "suce 4",
-		[](){std::cout << "Button 1 clicked!" << std::endl;});
+		[](){std::cout << "Button 4 clicked!" << std::endl;});
 	
 	std::cout << "Constructor StateMenu" << std::endl;
 }

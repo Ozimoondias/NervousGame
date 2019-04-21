@@ -26,6 +26,8 @@ void ButtonManager::event(sf::Event &event)
 		if (event.key.code == sf::Keyboard::Down)
 			if (i != buttons.size() - 1)
 				i += 1;
+		if (event.key.code == sf::Keyboard::Enter)
+			buttons[i]->get_function()();
 	}
 }
 
@@ -38,7 +40,8 @@ void ButtonManager::draw(sf::RenderWindow &win)
 		if (i != it)
 			buttons[it]->draw(win);
 		else
-			buttons[it]->draw(win, shader);
+			buttons[it]->draw(win);
+		//buttons[it]->draw(win, shader);
 	}
 }
 

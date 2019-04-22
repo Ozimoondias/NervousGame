@@ -18,9 +18,11 @@ public:
 	virtual ~IState();
 
 	virtual void event(sf::Event&) = 0;
-	virtual void update() = 0;
+	virtual void update(sf::Time&) = 0;
 	virtual void draw(sf::RenderWindow&) = 0;
 
+	virtual EState::State get_EState() = 0;
+	
 protected:
 	void change_c_state(EState::State);
 

@@ -1,9 +1,0 @@
-#include "Game.hpp"
-sf::Clock clock » redéclaré comme une sorte différente de symbole
-int	main()
-{
-	Game test(1920, 1080);
-
-	test.run();
-	return 0;
-}

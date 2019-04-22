@@ -231,6 +231,87 @@ src/State/IState.cpp.s:
 	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/IState.cpp.s
 .PHONY : src/State/IState.cpp.s
 
+src/State/StateExit.o: src/State/StateExit.cpp.o
+
+.PHONY : src/State/StateExit.o
+
+# target to build an object file
+src/State/StateExit.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateExit.cpp.o
+.PHONY : src/State/StateExit.cpp.o
+
+src/State/StateExit.i: src/State/StateExit.cpp.i
+
+.PHONY : src/State/StateExit.i
+
+# target to preprocess a source file
+src/State/StateExit.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateExit.cpp.i
+.PHONY : src/State/StateExit.cpp.i
+
+src/State/StateExit.s: src/State/StateExit.cpp.s
+
+.PHONY : src/State/StateExit.s
+
+# target to generate assembly for a file
+src/State/StateExit.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateExit.cpp.s
+.PHONY : src/State/StateExit.cpp.s
+
+src/State/StateFind.o: src/State/StateFind.cpp.o
+
+.PHONY : src/State/StateFind.o
+
+# target to build an object file
+src/State/StateFind.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateFind.cpp.o
+.PHONY : src/State/StateFind.cpp.o
+
+src/State/StateFind.i: src/State/StateFind.cpp.i
+
+.PHONY : src/State/StateFind.i
+
+# target to preprocess a source file
+src/State/StateFind.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateFind.cpp.i
+.PHONY : src/State/StateFind.cpp.i
+
+src/State/StateFind.s: src/State/StateFind.cpp.s
+
+.PHONY : src/State/StateFind.s
+
+# target to generate assembly for a file
+src/State/StateFind.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateFind.cpp.s
+.PHONY : src/State/StateFind.cpp.s
+
+src/State/StateHost.o: src/State/StateHost.cpp.o
+
+.PHONY : src/State/StateHost.o
+
+# target to build an object file
+src/State/StateHost.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateHost.cpp.o
+.PHONY : src/State/StateHost.cpp.o
+
+src/State/StateHost.i: src/State/StateHost.cpp.i
+
+.PHONY : src/State/StateHost.i
+
+# target to preprocess a source file
+src/State/StateHost.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateHost.cpp.i
+.PHONY : src/State/StateHost.cpp.i
+
+src/State/StateHost.s: src/State/StateHost.cpp.s
+
+.PHONY : src/State/StateHost.s
+
+# target to generate assembly for a file
+src/State/StateHost.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateHost.cpp.s
+.PHONY : src/State/StateHost.cpp.s
+
 src/State/StateManager.o: src/State/StateManager.cpp.o
 
 .PHONY : src/State/StateManager.o
@@ -284,6 +365,60 @@ src/State/StateMenu.s: src/State/StateMenu.cpp.s
 src/State/StateMenu.cpp.s:
 	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateMenu.cpp.s
 .PHONY : src/State/StateMenu.cpp.s
+
+src/State/StateMulti.o: src/State/StateMulti.cpp.o
+
+.PHONY : src/State/StateMulti.o
+
+# target to build an object file
+src/State/StateMulti.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateMulti.cpp.o
+.PHONY : src/State/StateMulti.cpp.o
+
+src/State/StateMulti.i: src/State/StateMulti.cpp.i
+
+.PHONY : src/State/StateMulti.i
+
+# target to preprocess a source file
+src/State/StateMulti.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateMulti.cpp.i
+.PHONY : src/State/StateMulti.cpp.i
+
+src/State/StateMulti.s: src/State/StateMulti.cpp.s
+
+.PHONY : src/State/StateMulti.s
+
+# target to generate assembly for a file
+src/State/StateMulti.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateMulti.cpp.s
+.PHONY : src/State/StateMulti.cpp.s
+
+src/State/StateOption.o: src/State/StateOption.cpp.o
+
+.PHONY : src/State/StateOption.o
+
+# target to build an object file
+src/State/StateOption.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateOption.cpp.o
+.PHONY : src/State/StateOption.cpp.o
+
+src/State/StateOption.i: src/State/StateOption.cpp.i
+
+.PHONY : src/State/StateOption.i
+
+# target to preprocess a source file
+src/State/StateOption.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateOption.cpp.i
+.PHONY : src/State/StateOption.cpp.i
+
+src/State/StateOption.s: src/State/StateOption.cpp.s
+
+.PHONY : src/State/StateOption.s
+
+# target to generate assembly for a file
+src/State/StateOption.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateOption.cpp.s
+.PHONY : src/State/StateOption.cpp.s
 
 src/State/StatePause.o: src/State/StatePause.cpp.o
 
@@ -339,6 +474,33 @@ src/State/StatePlay.cpp.s:
 	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StatePlay.cpp.s
 .PHONY : src/State/StatePlay.cpp.s
 
+src/State/StateSolo.o: src/State/StateSolo.cpp.o
+
+.PHONY : src/State/StateSolo.o
+
+# target to build an object file
+src/State/StateSolo.cpp.o:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateSolo.cpp.o
+.PHONY : src/State/StateSolo.cpp.o
+
+src/State/StateSolo.i: src/State/StateSolo.cpp.i
+
+.PHONY : src/State/StateSolo.i
+
+# target to preprocess a source file
+src/State/StateSolo.cpp.i:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateSolo.cpp.i
+.PHONY : src/State/StateSolo.cpp.i
+
+src/State/StateSolo.s: src/State/StateSolo.cpp.s
+
+.PHONY : src/State/StateSolo.s
+
+# target to generate assembly for a file
+src/State/StateSolo.cpp.s:
+	$(MAKE) -f CMakeFiles/nervous_game.dir/build.make CMakeFiles/nervous_game.dir/src/State/StateSolo.cpp.s
+.PHONY : src/State/StateSolo.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -387,18 +549,36 @@ help:
 	@echo "... src/State/IState.o"
 	@echo "... src/State/IState.i"
 	@echo "... src/State/IState.s"
+	@echo "... src/State/StateExit.o"
+	@echo "... src/State/StateExit.i"
+	@echo "... src/State/StateExit.s"
+	@echo "... src/State/StateFind.o"
+	@echo "... src/State/StateFind.i"
+	@echo "... src/State/StateFind.s"
+	@echo "... src/State/StateHost.o"
+	@echo "... src/State/StateHost.i"
+	@echo "... src/State/StateHost.s"
 	@echo "... src/State/StateManager.o"
 	@echo "... src/State/StateManager.i"
 	@echo "... src/State/StateManager.s"
 	@echo "... src/State/StateMenu.o"
 	@echo "... src/State/StateMenu.i"
 	@echo "... src/State/StateMenu.s"
+	@echo "... src/State/StateMulti.o"
+	@echo "... src/State/StateMulti.i"
+	@echo "... src/State/StateMulti.s"
+	@echo "... src/State/StateOption.o"
+	@echo "... src/State/StateOption.i"
+	@echo "... src/State/StateOption.s"
 	@echo "... src/State/StatePause.o"
 	@echo "... src/State/StatePause.i"
 	@echo "... src/State/StatePause.s"
 	@echo "... src/State/StatePlay.o"
 	@echo "... src/State/StatePlay.i"
 	@echo "... src/State/StatePlay.s"
+	@echo "... src/State/StateSolo.o"
+	@echo "... src/State/StateSolo.i"
+	@echo "... src/State/StateSolo.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

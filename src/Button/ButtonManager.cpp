@@ -1,15 +1,15 @@
 #include "Button/ButtonManager.hpp"
-#include <iostream>
-
-sf::Clock ccc;
 
 ButtonManager::ButtonManager()
 {
 	i = 0;
 	test = 0;
 
-	if (!shader.loadFromFile("../res/shader.gt", sf::Shader::Fragment))
-		;// erreur...
+	if (!shader.loadFromFile("../res/example_002.frag",
+				 sf::Shader::Fragment))
+		throw std::invalid_argument("ButtonManager shader.loadFromFile");
+	if (!shader.isAvailable())
+		throw std::invalid_argument("ButtonManager shader.isAvailable");
 }
 
 ButtonManager::~ButtonManager()
@@ -31,17 +31,19 @@ void ButtonManager::event(sf::Event &event)
 	}
 }
 
+void ButtonManager::update(sf::Time &dt)
+{
+	shader.setUniform("time", dt.asSeconds());
+}
+
 void ButtonManager::draw(sf::RenderWindow &win)
 {
-	shader.setUniform("time", ccc.getElapsedTime().asSeconds());
-
 	for (int it = 0; it < buttons.size(); ++it)
 	{
 		if (i != it)
 			buttons[it]->draw(win);
 		else
-			buttons[it]->draw(win);
-		//buttons[it]->draw(win, shader);
+			buttons[it]->draw(win, shader);
 	}
 }
 

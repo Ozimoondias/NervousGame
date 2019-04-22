@@ -4,7 +4,7 @@ StatePause::StatePause(StateManager &sm)
 	: IState(sm)
 {
 	if (!bgt.loadFromFile("../res/pause.png"))
-		;//return -1;
+		throw std::invalid_argument("StatePause bgt.loadFromFile");
 	bgs.setTexture(bgt);
 
 	std::cout << "Constructor StatePause" << std::endl;
@@ -42,14 +42,16 @@ void StatePause::event(sf::Event &event)
 	}
 }
 
-void StatePause::update()
+void StatePause::update(sf::Time &dt)
 {
-	//std::cout << "Update StatePause" << std::endl;
 }
 
 void StatePause::draw(sf::RenderWindow &win)
 {
-	//std::cout << "Draw StatePause" << std::endl;
-
 	win.draw(bgs);
+}
+
+EState::State StatePause::get_EState()
+{
+	return EState::State::Pause;
 }

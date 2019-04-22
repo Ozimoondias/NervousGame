@@ -14,6 +14,7 @@ public:
 	virtual ~ButtonManager();
 
 	void event(sf::Event&);
+	void update(sf::Time&);
 	void draw(sf::RenderWindow&);
 
 	void add_button(int, int, std::string, std::function<void(void)>);

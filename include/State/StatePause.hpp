@@ -13,9 +13,11 @@ public:
 	void clean();
 
 	void event(sf::Event&);
-        void update();
+        void update(sf::Time&);
         void draw(sf::RenderWindow&);
 
+	EState::State get_EState();
+	
 private:
 
 	sf::Sprite	bgs;

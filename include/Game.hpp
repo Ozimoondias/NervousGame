@@ -16,10 +16,16 @@ public:
 	virtual ~Game();
 	
 	void run();
+
+	void event();
+	void update();
+	void draw();
+	
 	sf::RenderWindow& get_window();
 
 private:
 
+	sf::Clock clock;
 	sf::RenderWindow window;
 	StateManager state_manager;
 

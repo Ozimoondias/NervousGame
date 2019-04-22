@@ -17,27 +17,44 @@ Game::~Game()
 
 void Game::run()
 {
-	while (window.isOpen())
+	while (window.isOpen()
+	       && state_manager.get_c_state()->get_EState()
+	       != EState::State::Exit)
 	{
-		sf::Event event;
-
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-			else
-				state_manager.get_c_state()->event(event);
-		}
-
-		if (event.type != sf::Event::LostFocus)
-		{
-			state_manager.get_c_state()->update();
-			
-			window.clear();
-			state_manager.get_c_state()->draw(window);
-			window.display();
-		}
+		event();
+		update();
+		draw();
 	}
+}
+
+void Game::event()
+{
+	sf::Event event;
+
+	while (window.pollEvent(event))
+	{
+		if (event.type == sf::Event::Closed)
+			window.close();
+		else
+			state_manager.get_c_state()->event(event);
+	}
+		
+
+}
+
+void Game::update()
+{
+	sf::Time time;
+
+	time = clock.getElapsedTime();
+	state_manager.get_c_state()->update(time);
+}
+
+void Game::draw()
+{
+	window.clear();
+	state_manager.get_c_state()->draw(window);
+	window.display();
 }
 
 sf::RenderWindow& Game::get_window()

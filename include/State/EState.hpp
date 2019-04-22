@@ -7,6 +7,12 @@ namespace EState
 	{
 		Menu,
 		Play,
+		Option,
+		Exit,
+		Solo,
+		Multi,
+		Host,
+		Find,
 		Pause
 	};
 }

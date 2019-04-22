@@ -12,6 +12,24 @@ StateManager::StateManager()
 		(EState::State::Play, std::make_shared<StatePlay>(*this)));
 	m_state.insert(
 		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Option, std::make_shared<StateOption>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Exit, std::make_shared<StateExit>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Solo, std::make_shared<StateSolo>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Multi, std::make_shared<StateMulti>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Host, std::make_shared<StateHost>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
+		(EState::State::Find, std::make_shared<StateFind>(*this)));
+	m_state.insert(
+		std::pair<EState::State, std::shared_ptr<IState>>
 		(EState::State::Pause, std::make_shared<StatePause>(*this)));
 
 	c_state = m_state[EState::Menu];

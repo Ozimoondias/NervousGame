@@ -4,21 +4,18 @@ StateMenu::StateMenu(StateManager &sm)
 	: IState(sm)
 {
 	if (!bgt.loadFromFile("../res/menu.png"))
-		;//return -1;
+		throw std::invalid_argument("StateMenu bgt.loadFromFile");
 	bgs.setTexture(bgt);
 	
 	button_manager.add_button(
 		100, 100, "play",
 		[&](){ change_c_state(EState::State::Play); });
 	button_manager.add_button(
-		100, 300, "suce 2",
-		[](){std::cout << "Button 2 clicked!" << std::endl;});
+		100, 300, "option",
+		[&](){ change_c_state(EState::State::Option); });
 	button_manager.add_button(
-		100, 500, "suce 3",
-		[](){std::cout << "Button 3 clicked!" << std::endl;});
-	button_manager.add_button(
-		100, 700, "suce 4",
-		[](){std::cout << "Button 4 clicked!" << std::endl;});
+		100, 500, "exit",
+		[&](){ change_c_state(EState::State::Exit); });
 	
 	std::cout << "Constructor StateMenu" << std::endl;
 }
@@ -43,15 +40,18 @@ void StateMenu::event(sf::Event &event)
 	button_manager.event(event);
 }
 
-void StateMenu::update()
+void StateMenu::update(sf::Time &dt)
 {
-	//std::cout << "Update StateMenu" << std::endl;
+	button_manager.update(dt);
 }
 
 void StateMenu::draw(sf::RenderWindow &win)
 {
-	//std::cout << "Draw StateMenu" << std::endl;
-
 	win.draw(bgs);
 	button_manager.draw(win);
+}
+
+EState::State StateMenu::get_EState()
+{
+	return EState::State::Menu;
 }

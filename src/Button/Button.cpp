@@ -4,15 +4,18 @@ Button::Button(int x, int y, std::string t,
 	       std::function<void(void)> f)
 {
 	if (!texture.loadFromFile("../res/button.png"))
-		;//return -1;
+		throw std::invalid_argument("Button texture.loadFromFile");
 	sprite.setTexture(texture);
 	sprite.setPosition(sf::Vector2f(x, y));
 
+	sf::FloatRect bounds = sprite.getLocalBounds();
 	if (!font.loadFromFile("../res/arcade.ttf"))
-		;// erreur...
+		throw std::invalid_argument("Button font.loadFromFile");
 	text.setFont(font);
 	text.setString(t);
-	text.setPosition(sf::Vector2f(x, y));
+	text.setPosition(
+		x + (bounds.width / 3),
+		y + (bounds.height / 3));
 
 	function = f;
 }
@@ -29,17 +32,8 @@ void Button::draw(sf::RenderWindow &win)
 
 void Button::draw(sf::RenderWindow &win, sf::Shader &shader)
 {
-	/*sf::Texture tex;
-	tex.loadFromFile("../res/button.png");
-	sf::Sprite spr(tex);
-
-
-	sf::RenderStates states;
-        states.shader = &shader;
-
-	//win.draw(sprite, &shader);
-	win.draw(spr, states);
-	//win.draw(text, &shader);*/
+	win.draw(sprite, &shader);
+	win.draw(text);
 }
 
 std::function<void(void)> Button::get_function()
